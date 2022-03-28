@@ -31,8 +31,7 @@ def generate_best_combination(data):
             optimal_combination.append(share)
             profit += share["profit"]
             spending += share["price"]
-    shares_to_buy = [share for share in optimal_combination]
-    return shares_to_buy, spending, profit
+    return optimal_combination, spending, profit
 
 
 def display_result(data):
